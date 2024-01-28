@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Next Unread Thread",
+  "description": "Adds a Thread button, marks current thread or conversation as read and moves to the next unread message",
+  "homepage_url": "https://addons.thunderbird.net/en-US/thunderbird/addon/next-unread-thread/",
+  "version": "1.2",
+  "experiment_apis": {
+    "nextUnreadThreadApi": {
+      "schema": "schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["nextUnreadThreadApi"]],
+        "script": "implementation.js"
+      }
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_label": "Thread",
+    "default_title": "Mark this thread or conversation as read, and move to the next unread message",
+    "default_icon": "nextUnreadThread.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "nextUnreadThread@dillinger",
+      "strict_min_version": "91.0",
+      "strict_max_version": "124.*"
+    }
+  },
+  "icons": {
+    "32": "nextUnreadThread32.png"
+  }
+}

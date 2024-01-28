@@ -1,0 +1,19 @@
+[
+  {
+    "namespace": "nextUnreadThreadApi",
+    "functions": [
+      {
+        "name": "nextUnreadThread",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "loadButton",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      }
+    ]
+  }
+]
