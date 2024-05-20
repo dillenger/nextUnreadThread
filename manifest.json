@@ -22,11 +22,11 @@
     "default_title": "Mark this thread or conversation as read, and move to the next unread message",
     "default_icon": "nextUnreadThread.png"
   },
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "nextUnreadThread@dillinger",
       "strict_min_version": "91.0",
-      "strict_max_version": "127.*"
+      "strict_max_version": "128.*"
     }
   },
   "icons": {
